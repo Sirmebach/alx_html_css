@@ -42,4 +42,66 @@ footer {
 article, aside {
     padding: 20px; /* Add padding inside article and aside */
 }
+/* Mobile-first approach */
+body.works_on_smartphone {
+    /* Adjust the font size, padding, and layout for smaller screens */
+    font-size: 16px;
+}
+
+/* Example of a media query for smartphones (max-width 600px) */
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+    }
+
+    article {
+        flex: none; /* Allow the article to take full width */
+        margin-right: 0;
+    }
+
+    aside {
+        flex: none; /* Allow the aside to take full width */
+    }
+
+    /* Adjust the padding for smaller screens */
+    header, footer {
+        padding: 10px;
+    }
+}
+/* Set background colors and text colors */
+header {
+    background-color: #3f96cf; /* Blue background */
+    color: white; /* White text */
+    padding: 20px;
+}
+
+footer {
+    background-color: #162b40; /* Dark background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add some padding and a border around the article */
+article {
+    background-color: #04f896; /* Light green background */
+    color:#000000; /* Dark text */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7; /* Light border */
+    box-shadow: 0 4px 8px rgba(59, 59, 59, 0.1); /* Subtle shadow effect */
+}
+
+aside {
+    background-color: #10f2e6; /* Yellow background */
+    padding: 20px;
+    border-radius: 8px;
+}
+/* Style the logo */
+.logo {
+    font-size: 36px; /* Make the logo larger */
+    color: #2b00ff; /* Blue color for the logo */
+    margin-right: 15px; /* Space between the logo and the next list item */
+    font-weight: bold; /* Make it bold */
+}
 
